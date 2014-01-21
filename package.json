@@ -1,0 +1,43 @@
+{
+  "name": "wd-video",
+  "version": "0.1.0",
+  "description": "Utility for recording videos of your integration tests with WD",
+  "keywords": ["webdriver", "wd", "video", "integration tests", "selenium"],
+  "author": {
+    "name": "Ján Naništa",
+    "email": "jan.jakub.nanista@gmail.com",
+    "url": "https://www.facebook.com/jan.jakub.nanista"
+  },
+  "bugs": {
+    "url": "https://github.com/janjakubnanista/wd-video-recorder/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janjakubnanista/wd-video.git"
+  },
+  "main": "./lib/recorder",
+  "dependencies": {
+    "fluent-ffmpeg": "~1.5.2",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "jshint-stylish": "~0.1.3",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.0",
+    "mocha": "~1.17.0",
+    "grunt-shell": "~0.6.1",
+    "expect.js": "~0.2.0",
+    "sinon": "~1.7.3",
+    "chai": "~1.8.1",
+    "colors": "~0.6.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
