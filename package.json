@@ -1,6 +1,6 @@
 {
-  "name": "wd-video",
-  "version": "0.1.0",
+  "name": "wd-video-recorder",
+  "version": "0.1.1",
   "description": "Utility for recording videos of your integration tests with WD",
   "keywords": ["webdriver", "wd", "video", "integration tests", "selenium"],
   "author": {

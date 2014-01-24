@@ -16,7 +16,7 @@ from root directory of your node project to install WD Video Recorder.
 
 ## Usage
 
-Using WD Video Recorder should be really easy. The process consists of NNN simple steps:
+Using WD Video Recorder should be really easy. The process consists of 6 simple steps:
 
 1. Import library to your JavaScript (test) file
 	
