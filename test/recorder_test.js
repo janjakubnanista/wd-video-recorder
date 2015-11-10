@@ -113,7 +113,27 @@ describe('Recorder', function() {
     });
 
     describe('save method', function() {
-        it('should save all frames from tmpdir to a video file', function(done) {
+        it('should save all frames from tmpdir to a avi video file', function(done) {
+            this.recorder.start();
+
+            this.clock.tick(this.frameInterval * 5);
+
+            expect(fs.existsSync(this.dir)).to.be(true);
+
+            this.recorder.stop();
+
+            this.recorder.save(this.output, function(stderr, stdout, output) {
+                expect(fs.statSync(output).isFile(output)).to.be(true);
+
+                done();
+            });
+        });
+
+
+        it('should save in custom format provided in options.format', function(done) {
+            this.output =  __dirname + '/output.mp4';
+            this.options.format = 'mp4';
+
             this.recorder.start();
 
             this.clock.tick(this.frameInterval * 5);
